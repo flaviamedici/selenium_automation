@@ -17,9 +17,14 @@ public class SeleniumLocatorsXPathTest {
         WebDriver driver = new ChromeDriver(options);
         driver.get("https://www.testing101.net/seleniumlocators");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//select")).click();
+        driver.findElement(By.xpath("//*[@id='input_comp-lkl9bex61']")).click();
+        driver.findElement(By.xpath("//*[@id='input_comp-lkl9bexd1']")).click();
+        driver.findElement(By.xpath("//*[@id='input_comp-lkl9bexf2']")).click();
+        driver.findElement(By.xpath("//*[@id='input_comp-lkl9zef6']")).click();
+        driver.findElement(By.xpath("//select[@id='collection_comp-lkla8auc']")).click();
         driver.findElement(By.xpath("//*[text() = 'Personal' and @class='P6sHUt']")).click();
-        driver.findElement(By.xpath("//button//span[text()='Submit']")).click();
+        driver.findElement(By.xpath("//*[@id='comp-lkla555k']")).click();
+        driver.findElement(By.xpath("//span[text()='Submit']")).click();
 
         Thread.sleep(5000);
         driver.quit();
