@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.idealized.Javascript;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -42,5 +43,9 @@ public class AssertionNotEqual {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+    @AfterTest
+    public void tearDown() {
+        driver.quit();
     }
 }
