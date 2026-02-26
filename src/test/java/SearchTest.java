@@ -35,7 +35,7 @@ public class SearchTest {
            searchInput.submit();
            Thread.sleep(3000); // Wait for search results to load (adjust as needed)
 
-           List<WebElement> searchResults = driver.findElements(By.xpath("//a[contains(@title, 'ChatGPT')]"));
+           List<WebElement> searchResults = driver.findElements(By.xpath("//a[contains(@title, 'ChatGPT')][@data-hook='item-title']"));
            
            for (WebElement result : searchResults) {
                 boolean containsChatGPT = result.getText().contains("ChatGPT");
