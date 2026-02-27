@@ -54,13 +54,13 @@ public class hfilters_sorting {
 
         // Click on the "Shop" element of the Java drop-down menu by XPath
         Thread.sleep(2000);
-        WebElement shopElement = driver.findElement(By.xpath("//p[@id='comp-jy5vlzj8moreContainer5label']"));
+        WebElement shopElement = driver.findElement(By.xpath("//p[@id='comp-jy5vlzj8moreContainer4label']"));
         shopElement.click();
         Thread.sleep(2000);
-
+     
         // Locate and click on the element by XPath
         Thread.sleep(2000);
-        WebElement recommendedElement = driver.findElement(By.xpath("//div[@data-hook='floating-dropdown-button']"));
+        WebElement recommendedElement = driver.findElement(By.xpath("//div[@data-hook='floating-dropdown-base-selected-value']"));
         recommendedElement.click();
         Thread.sleep(2000);
 
